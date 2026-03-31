@@ -2,9 +2,6 @@
 
 Vulcan transforme une spec feature en code shippe, avec un pipeline multi-agents strict, auditable, et rapide.
 
-Theme: **forge mythologique**.  
-Positionnement: **moins de chaos, plus de livraisons propres**.
-
 ## Ce que Vulcan fait
 
 - Lit une spec markdown avec frontmatter structure.
@@ -52,17 +49,3 @@ Base-toi sur `templates/feature.md`:
 - **Parallel by default**: implementation et review en parallele.
 - **Append-only audit trail**: `workspace/messages.jsonl`.
 - **Workspace isolation**: l'orchestrateur n'ecrit pas direct dans le projet cible.
-
-## Branding
-
-Vulcan est pense comme une forge:
-- la spec est le minerai,
-- le plan est le moule,
-- les experts frappent le metal,
-- les reviewers trempent la lame,
-- le shipper livre l'arme en prod.
-
----
-
-Built by **Caezarr**.  
-Codename: **Vulcan, God of Shipping**.
