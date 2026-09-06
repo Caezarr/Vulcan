@@ -1,0 +1,18 @@
+# Dependencies / local tooling
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Runtime workspace (ephemeral session state)
+workspace/state.md
+workspace/messages.jsonl
+workspace/reviews/
+workspace/*.tmp
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
