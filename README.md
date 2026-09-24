@@ -49,3 +49,7 @@ Base-toi sur `templates/feature.md`:
 - **Parallel by default**: implementation et review en parallele.
 - **Append-only audit trail**: `workspace/messages.jsonl`.
 - **Workspace isolation**: l'orchestrateur n'ecrit pas direct dans le projet cible.
+
+## Skills & agents
+
+See the [full skills & agents index](docs/INDEX.md) for a complete reference of all available roles.
