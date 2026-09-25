@@ -53,3 +53,7 @@ Base-toi sur `templates/feature.md`:
 ## Skills & agents
 
 See the [full skills & agents index](docs/INDEX.md) for a complete reference of all available roles.
+
+## Contributing
+
+Contributions are welcome! Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
