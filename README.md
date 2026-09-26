@@ -43,6 +43,8 @@ Base-toi sur `templates/feature.md`:
 - `requires_security_review`
 - criteres de succes mesurables
 
+See [`templates/README.md`](templates/README.md) for template details and agent handoff workflow.
+
 ## Philosophie de qualite
 
 - **Gate first**: pas de bypass du gate.
