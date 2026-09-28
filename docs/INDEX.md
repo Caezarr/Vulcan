@@ -1,5 +1,7 @@
 # Vulcan Skills & Agents Reference
 
+This index provides a complete reference of all Vulcan skills and agent roles. For an overview, see [skills/README.md](../skills/README.md) and [agents/README.md](../agents/README.md).
+
 ## Skills
 
 - **[vulcan](../skills/vulcan.md)** — Multi-agent feature forge orchestrator - ships features from spec to PR
