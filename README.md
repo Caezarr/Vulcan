@@ -56,6 +56,9 @@ See [`templates/README.md`](templates/README.md) for template details and agent 
 
 See the [full skills & agents index](docs/INDEX.md) for a complete reference of all available roles.
 
+- **[Skills](skills/README.md)** — Reusable skill files for Vulcan agents
+- **[Agents](agents/README.md)** — Agent role prompts and pipeline flow
+
 ## Contributing
 
 Contributions are welcome! Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
