@@ -2,6 +2,14 @@
 
 Vulcan transforme une spec feature en code shippe, avec un pipeline multi-agents strict, auditable, et rapide.
 
+## Quickstart
+
+1. **Read the orchestrator contract**: [`CLAUDE.md`](CLAUDE.md) defines the full pipeline, phases, and message protocol.
+2. **Pick a feature template**: [`templates/`](templates/) contains starter specs for different types of features.
+3. **Run the orchestrator**: invoke it with your feature spec, and Vulcan handles planning, implementation, review, and shipping.
+
+See [`templates/README.md`](templates/README.md) for template details and workflow.
+
 ## Ce que Vulcan fait
 
 - Lit une spec markdown avec frontmatter structure.
