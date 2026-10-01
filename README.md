@@ -4,6 +4,9 @@ Vulcan transforme une spec feature en code shippe, avec un pipeline multi-agents
 
 ## Quickstart
 
+**New to Vulcan?** See [`docs/QUICKSTART.md`](docs/QUICKSTART.md) for a practical five-step guide from feature spec to shipped PR.
+
+**Already familiar?**
 1. **Read the orchestrator contract**: [`CLAUDE.md`](CLAUDE.md) defines the full pipeline, phases, and message protocol.
 2. **Pick a feature template**: [`templates/`](templates/) contains starter specs for different types of features.
 3. **Run the orchestrator**: invoke it with your feature spec, and Vulcan handles planning, implementation, review, and shipping.

@@ -1,6 +1,10 @@
 # Vulcan Skills & Agents Reference
 
-This index provides a complete reference of all Vulcan skills and agent roles. For an overview, see [skills/README.md](../skills/README.md) and [agents/README.md](../agents/README.md).
+This index provides a complete reference of all Vulcan skills and agent roles.
+
+**New to Vulcan?** Start with [QUICKSTART.md](QUICKSTART.md) for a practical five-step guide.
+
+For overviews, see [skills/README.md](../skills/README.md) and [agents/README.md](../agents/README.md).
 
 ## Skills
 
