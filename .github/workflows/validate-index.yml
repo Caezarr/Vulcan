@@ -1,0 +1,25 @@
+name: Validate Skills/Agents Index
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Check INDEX.md completeness
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run index validation
+        run: |
+          bash scripts/validate-index.sh
+      
+      - name: Report status
+        if: failure()
+        run: |
+          echo "::error::Skills/agents index validation failed. See logs above for missing entries."
