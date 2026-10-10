@@ -73,3 +73,9 @@ See the [full skills & agents index](docs/INDEX.md) for a complete reference of 
 ## Contributing
 
 Contributions are welcome! Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
+
+## Community
+
+- **[Code of Conduct](CODE_OF_CONDUCT.md)** — Community standards and expected behavior
+- **[Security Policy](SECURITY.md)** — How to report vulnerabilities responsibly
+- **[Support](SUPPORT.md)** — Where to ask questions and get help
