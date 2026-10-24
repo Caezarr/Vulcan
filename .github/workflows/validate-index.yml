@@ -6,11 +6,19 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: validate-index-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   validate:
     name: Check INDEX.md completeness
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 5
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
