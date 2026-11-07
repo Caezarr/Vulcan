@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Caezarr/Vulcan/blob/main/SECURITY.md
+    about: Report security issues privately — never paste API keys, tokens, or workspace data in a public issue.
+  - name: Questions and support
+    url: https://github.com/Caezarr/Vulcan/blob/main/SUPPORT.md
+    about: How to get help before opening a bug report.
