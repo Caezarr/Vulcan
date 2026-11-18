@@ -1,0 +1,17 @@
+{
+  "name": "vulcan",
+  "private": true,
+  "description": "Multi-agent feature-shipping orchestrator for Claude Code: spec → plan → parallel experts → review gate → PR",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate:index": "bash scripts/validate-index.sh",
+    "validate:definitions": "node scripts/validate-definitions.mjs",
+    "validate:messages": "node scripts/validate-messages.mjs examples/*/messages.jsonl",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run validate:index && npm run validate:definitions && npm run validate:messages && npm test"
+  }
+}
