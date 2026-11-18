@@ -23,7 +23,7 @@ Use when asked to: "ship this feature", "implement the spec", "run vulcan", "/vu
 
 ## How to invoke
 
-The vulcanDir is `/Users/gabriel/Desktop/vulcan`.
+The vulcanDir is the directory this repo is cloned into: `$VULCAN_DIR` if set, otherwise `~/vulcan`. Resolve it to an absolute path before building the config.
 
 ### Step 1 — Get inputs
 
@@ -46,8 +46,8 @@ If the user has no spec yet, offer to create one:
 ```json
 {
   "sessionId": "vulcan-{YYYYMMDD}-{NNN}",
-  "vulcanDir": "/Users/gabriel/Desktop/vulcan",
-  "workspaceDir": "/Users/gabriel/Desktop/vulcan/workspace",
+  "vulcanDir": "<absolute vulcanDir>",
+  "workspaceDir": "<absolute vulcanDir>/workspace",
   "featureFile": "<absolute path to the .md spec file>",
   "targetDir": "<from spec frontmatter target_dir, or user input>",
   "gitBranch": "feat/<feature-slug-from-spec>",
@@ -61,7 +61,7 @@ Generate `sessionId` as `vulcan-YYYYMMDD-001` (increment NNN if a session for to
 
 ### Step 4 — Run the protocol
 
-Read `/Users/gabriel/Desktop/vulcan/CLAUDE.md` and follow the Vulcan orchestration protocol exactly, using the config you built.
+Read `{vulcanDir}/CLAUDE.md` and follow the Vulcan orchestration protocol exactly, using the config you built.
 
 ---
 

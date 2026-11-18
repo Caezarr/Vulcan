@@ -1,7 +1,7 @@
 # Implementation Plan
 Feature: conductor-phase1 — Conductor Phase 1 Core MVP
 Session: vulcan-20260331-001
-Target: /Users/gabriel/Desktop/Wonka/code/agent-manager
+Target: ~/code/agent-manager
 Date: 2026-03-31
 
 ## Agent Roster

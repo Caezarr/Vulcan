@@ -3,7 +3,7 @@ feature: conductor-phase1
 title: "Conductor — Phase 1 Core MVP"
 status: ready
 priority: high
-target_dir: /Users/gabriel/Desktop/Wonka/code/agent-manager
+target_dir: ~/code/agent-manager
 stack:
   backend: python
   frontend: react

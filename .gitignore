@@ -7,10 +7,8 @@ node_modules/
 !.env.example
 
 # Runtime workspace (ephemeral session state)
-workspace/state.md
-workspace/messages.jsonl
-workspace/reviews/
-workspace/*.tmp
+workspace/*
+!workspace/.gitkeep
 
 # Editor / OS
 .idea/
