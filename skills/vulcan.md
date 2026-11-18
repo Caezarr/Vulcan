@@ -1,3 +1,9 @@
+---
+name: vulcan
+kind: skill
+description: "Ship a feature spec end to end: build the session config, then run the Vulcan orchestration protocol in CLAUDE.md."
+---
+
 # Vulcan — Feature Shipping Skill
 
 Trigger this skill when the user wants to ship a feature, implement a spec, or run the Vulcan forge pipeline.
@@ -69,7 +75,7 @@ Read `{vulcanDir}/CLAUDE.md` and follow the Vulcan orchestration protocol exactl
 
 ```
 /vulcan features/user-auth.md
-/vulcan /Users/me/project/specs/dark-mode.md --no-pr
+/vulcan /path/to/project/specs/dark-mode.md --no-pr
 /vulcan features/payments.md --skip-agents db
 /vulcan features/api-refactor.md --skip-security --skip-agents frontend,db
 ```
