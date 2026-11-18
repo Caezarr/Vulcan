@@ -1,4 +1,4 @@
-name: Validate Skills/Agents Index
+name: validate
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 concurrency:
-  group: validate-index-${{ github.ref }}
+  group: validate-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -18,16 +18,29 @@ jobs:
     name: Check INDEX.md completeness
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
-      
+
       - name: Run index validation
-        run: |
-          bash scripts/validate-index.sh
-      
+        run: bash scripts/validate-index.sh
+
       - name: Report status
         if: failure()
-        run: |
-          echo "::error::Skills/agents index validation failed. See logs above for missing entries."
+        run: echo "::error::Skills/agents index validation failed. See logs above for missing entries."
+
+  definitions:
+    name: Definitions, audit trail and tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Agent/skill/spec frontmatter vs CLAUDE.md protocol
+        run: npm run validate:definitions
+      - name: Sample run messages.jsonl vs protocol
+        run: npm run validate:messages
+      - name: Unit tests (node:test, no dependencies)
+        run: npm test

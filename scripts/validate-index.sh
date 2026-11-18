@@ -26,7 +26,9 @@ check_directory() {
         
         name="${basename%.md}"
         
-        if ! grep -q "$name" "$INDEX_FILE"; then
+        # Match the file path (e.g. agents/api.md), not the bare name: "api"
+        # alone would match any line containing those three letters.
+        if ! grep -qF "$type/$basename" "$INDEX_FILE"; then
             echo "  ❌ Missing: $type/$basename is not listed in docs/INDEX.md"
             missing=$((missing + 1))
         else
