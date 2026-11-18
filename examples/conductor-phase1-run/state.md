@@ -1,8 +1,8 @@
 # Vulcan State
 Session: vulcan-20260331-001
 Feature: Conductor — Phase 1 Core MVP (conductor-phase1)
-Spec: /Users/gabriel/Desktop/vulcan/features/conductor-phase1.md
-Target: /Users/gabriel/Desktop/Wonka/code/agent-manager
+Spec: ~/vulcan/features/conductor-phase1.md
+Target: ~/code/agent-manager
 Status: SHIP_READY
 Started: 2026-03-31T00:00:00Z
 
