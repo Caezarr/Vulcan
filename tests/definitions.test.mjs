@@ -71,7 +71,7 @@ describe("feature spec lint", () => {
     const source = spec()
       .replace("status: ready", "status: done")
       .replace("skip_agents: [db]", "skip_agents: [devops]")
-      .replace("target_dir: ~/code/app", "target_dir: /Users/someone/app")
+      .replace("target_dir: ~/code/app", "target_dir: /home/someone/app")
       .replace("requires_security_review: true", "requires_security_review: maybe");
     const errors = lintFeatureSpec({ file: "f.md", source, isTemplate: false }).join("\n");
     assert.match(errors, /status must be one of/);

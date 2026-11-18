@@ -5,8 +5,9 @@ Get a feature shipped in five steps.
 ## 1. Clone and understand the layout
 
 ```bash
-git clone <your-vulcan-fork>
-cd vulcan
+git clone https://github.com/Caezarr/Vulcan ~/vulcan   # the skill looks in $VULCAN_DIR, else ~/vulcan
+cd ~/vulcan
+npm run check   # optional: validates the repo, no dependencies
 ```
 
 Key directories:
@@ -88,5 +89,6 @@ If blocked, see `workspace/block-report.md` for required fixes. Re-run with `--s
 
 - **[OPERATOR.md](OPERATOR.md)** — day-to-day runbook, ship gates, sandbox rules
 - **[INDEX.md](INDEX.md)** — full reference of all agents and skills
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** — roles, phases, messages, gates, failure handling
 - **[CLAUDE.md](../CLAUDE.md)** — complete orchestrator contract (phases, message protocol, rules)
 - **[templates/README.md](../templates/README.md)** — template details and best practices

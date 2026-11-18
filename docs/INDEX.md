@@ -2,7 +2,7 @@
 
 This index provides a complete reference of all Vulcan skills and agent roles.
 
-**New to Vulcan?** Start with [QUICKSTART.md](QUICKSTART.md) for a practical five-step guide.
+**New to Vulcan?** Start with [QUICKSTART.md](QUICKSTART.md) for a practical five-step guide. For how the pieces fit together, read [ARCHITECTURE.md](ARCHITECTURE.md).
 
 For overviews, see [skills/README.md](../skills/README.md) and [agents/README.md](../agents/README.md).
 
@@ -29,6 +29,14 @@ Agents are specialized roles in the Vulcan pipeline. They are spawned automatica
 | **security** | Scans changed files for security vulnerabilities | [agents/security.md](../agents/security.md) | Orchestrator (Phase 4, parallel, optional) |
 | **shipper** | Creates branch, commits, pushes, opens PR | [agents/shipper.md](../agents/shipper.md) | Orchestrator (Phase 6) |
 
+## Validators
+
+| Script | Checks | npm script |
+|------|---------|------|
+| [scripts/validate-index.sh](../scripts/validate-index.sh) | Every file in `agents/` and `skills/` is listed here by path | `validate:index` |
+| [scripts/validate-definitions.mjs](../scripts/validate-definitions.mjs) | Agent/skill and feature-spec frontmatter vs the protocol in `CLAUDE.md` | `validate:definitions` |
+| [scripts/validate-messages.mjs](../scripts/validate-messages.mjs) | A `messages.jsonl` audit trail vs the protocol and the gate | `validate:messages` |
+
 ---
 
-**Note:** This index is kept in sync with the actual files in `skills/` and `agents/` directories. A validation script ensures completeness.
+**Note:** This index is kept in sync with the actual files in `skills/` and `agents/` directories; `scripts/validate-index.sh` fails CI when an entry is missing.
